@@ -7,9 +7,10 @@ website: ${url}
 main: ${mainClass}
 
 commands:
-    example:
-        description: An example command
-        permission: spigotplugin.example
+    boom:
+        description: TNT go boom
+        permission: mcpi.boom
         usage: /<command>
+        permission-message: NO BOOM FOR YOU!
 
 permissions: {}

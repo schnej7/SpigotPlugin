@@ -1,8 +1,10 @@
-package me.sgray.template.spigotplugin;
+package mcpi;
+
+import mcpi.boom.BoomCommand;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class SpigotPlugin extends JavaPlugin {
+public class MCPI extends JavaPlugin {
     @Override
     public void onDisable() {
         // Don't log disabling, Spigot does that for you automatically!
@@ -13,6 +15,6 @@ public class SpigotPlugin extends JavaPlugin {
         // Don't log enabling, Spigot does that for you automatically!
 
         // Commands enabled with following method must have entries in plugin.yml
-        getCommand("example").setExecutor(new ExampleCommand(this));
+        getCommand("boom").setExecutor(new BoomCommand(this));
     }
 }
